@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_margin="1dp"
+
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:id="@+id/med"
+            android:paddingLeft="4dp"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="100.00"
+
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:id="@+id/pr" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="1"
+            android:backgroundTint="#e9e9e9"
+            android:layout_weight="3"
+            android:textSize="14dp"
+            android:elevation="8dp"
+
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:id="@+id/qty" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="460.00"
+            android:layout_weight="4"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/amt"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:scrollHorizontally="true"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:id="@+id/btndel"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/deleteicon"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b7b7b7"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</LinearLayout>

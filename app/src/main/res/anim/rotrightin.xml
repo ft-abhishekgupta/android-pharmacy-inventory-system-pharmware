@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator" >
+
+    <!--<translate-->
+        <!--android:duration="2000"-->
+        <!--android:fillAfter="true"-->
+        <!--android:fromXDelta="100%p"-->
+        <!--android:startOffset="300"-->
+        <!--android:toXDelta="0%p" >-->
+    <!--</translate>-->
+
+    <!-- Rotate 180 degrees -->
+    <rotate
+        android:duration="800"
+        android:fromDegrees="90"
+
+        android:pivotX="100%"
+        android:pivotY="100%"
+        android:repeatCount="0"
+
+        android:toDegrees="0" />
+
+</set>

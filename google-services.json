@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "524564989032",
+    "firebase_url": "https://pharmware-dad0c.firebaseio.com",
+    "project_id": "pharmware-dad0c",
+    "storage_bucket": "pharmware-dad0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524564989032:android:f92139fd83501b86",
+        "android_client_info": {
+          "package_name": "com.android.pharmware"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524564989032-grgla1ue41njmvlcer3jmv77gg63v5jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnzneQauaeG2qRyzq6IByRtsFRWxooSKw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

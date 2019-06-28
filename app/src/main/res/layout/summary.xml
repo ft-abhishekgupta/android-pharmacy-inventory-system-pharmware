@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="22dp"
+    android:textAlignment="center"
+    android:id="@+id/title"
+    android:padding="10dp"
+    android:textColor="@color/colorPrimary"
+    android:textAllCaps="true"
+    android:textStyle="bold|italic"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="15dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/rupees"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#41b324"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="0.0"
+                    android:id="@+id/todayamt"
+                    android:textSize="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Items Sold"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:id="@+id/todaycount"
+                    android:textColor="#000000"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="This Month"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="15dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/rupees"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#41b324"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="0.0"
+                    android:id="@+id/mamt"
+                    android:textSize="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Items Sold"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:id="@+id/mcount"
+                    android:textColor="#000000"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="15dp"
+        android:onClick="updatei"
+        android:layout_height="wrap_content"
+        android:text="Update Information"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="View Sample Invoice"
+        android:id="@+id/sample" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:id="@+id/log"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Log Records"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="logout"
+        android:text="Log Out"
+        />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_updateinfo"
+        android:orderInCategory="100"
+        android:title="Update Info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="200"
+        android:title="Log Out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/order_ename"
+        android:orderInCategory="300"
+        android:title="Order By ItemName"
+        android:checkable="true"
+        android:checked="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/order_qty"
+        android:orderInCategory="400"
+        android:title="Order By Quantity"
+        android:checkable="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/order_exp"
+        android:orderInCategory="500"
+        android:checkable="true"
+        android:title="Order By Expiry"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/order_due"
+        android:orderInCategory="600"
+        android:title="OrderBy Balance"
+        android:checkable="true"
+        app:showAsAction="never" />
+
+</menu>
