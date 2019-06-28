@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'TCS'
-            keyPassword 'pharmware'
-            storeFile file('D:/Key.jks')
-            storePassword 'pharmware'
-        }
-    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.android.pharmware"
@@ -22,7 +14,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
         }
         buildType {
         }
